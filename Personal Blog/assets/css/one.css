@@ -1,0 +1,178 @@
+/* start index style */
+.head{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(195, 43, 226, 0.356); 
+    width: 100%;
+}
+
+.head h1{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.head a{
+    font-style: italic;
+}
+
+
+nav{
+width: 100%;
+} 
+
+ul {
+    display: flex;
+    justify-content: end;
+}
+
+ul li{
+    
+    padding-top: 20px;
+    padding-left: 7px;
+    list-style: none;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+li a{
+    color: white;
+}
+
+.mainpage{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card{
+    padding: 10px;
+    transition:transform 0.6s;
+    background-color: rgba(236, 225, 238, 0.356);
+    border: solid rgba(195, 43, 226, 0.356);  
+    border-radius: 30px; 
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    background-color: rgba(195, 43, 226, 0.356); 
+    
+}
+
+.card img{
+    width: 90%;
+    height: 200px;
+}
+
+.image-caption{
+    color: rgba(167, 31, 194, 0.685); 
+}
+
+.description{
+    padding: 15px 0;
+}
+
+.reed-more  {
+display: flex;
+justify-content: center;
+padding:10px  ;
+
+}
+
+.reed-more a {
+    color: white;
+    background-color: rgba(167, 31, 194, 0.685); 
+    text-decoration: none;
+}
+
+.reed-more button{
+    border-radius: 20px;
+    border-color: rgba(167, 31, 194, 0.685); 
+}
+
+.footer{
+    background-color: rgba(167, 31, 194, 0.685); 
+    color: white;
+    display: flex;
+    justify-content: first;
+    padding: 15px;
+    width: 100%;
+}
+
+.conect{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conect a{
+    text-decoration: none;
+    color: white;
+
+}
+/* end index style */
+/* start Multi-Device Web Design */
+@media (max-width:767px){
+    .mainpage{
+
+        grid-template-columns: auto ;
+    } 
+}
+
+@media (min-width:768px) and (max-width:999px){
+    .mainpage{
+
+        grid-template-columns: auto  auto;
+    } 
+}
+
+@media (min-width:1000px){
+    .mainpage{
+        padding: 10px;
+    }
+.author-avatar img  {
+    width: 100px;
+    height: 100px;
+    } 
+    
+    ul li {
+        padding-right: 20px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .about-blog  p{
+        font-size: 30px;
+    } 
+
+    p.auhtor-name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p.auhtor-bio {
+        font-size: 1.2rem;
+        color: #555;
+    } 
+
+    img.author-avatar{
+        width: 100px;
+        height: 100px;
+    }
+
+    .example h3{
+        font-size: 25px;
+    }
+
+    .example pre{
+        font-size: 20px;
+    }
+
+    .back{
+        font-size: 20px;
+    }
+}
